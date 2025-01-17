@@ -93,15 +93,29 @@ var age = +prompt('Введите свой возраст')
         break
     }
 
+    var a = +prompt("Введите первое число");
+    var b = +prompt("Введите второе число");
+    var c = +prompt("Введите третье число");
 
-    var number1 = +prompt('Введите первое число')
-    var number2 = +prompt('Введите второе число')
-    var number3 = +prompt('Введите третье число')
-    var average;
-    if((number1 > number2 && number2 < number3) || (number2 < number1 && number2 > number3)){
-        average = number2
-    }else{
-        average = number3
-    }
+if ((a > b && a < c) || (a < b && a > c)) {
+  alert(a);
+} else if ((b > a && b < c) || (b < a && b > c)) {
+  alert(b);
+} else if ((c > a && c < b) || (c < a && c > b)) {
+  alert(c);
+}
 
-    alert('Среднее число: ' + average)
+alert("Среднее число: " + average);
+
+
+    // var number1 = +prompt('Введите первое число')
+    // var number2 = +prompt('Введите второе число')
+    // var number3 = +prompt('Введите третье число')
+    // var average;
+    // if((number1 > number2 && number2 < number3) || (number2 < number1 && number2 > number3)){
+    //     average = number2
+    // }else{
+    //     average = number3
+    // }
+
+    // alert('Среднее число: ' + average)
